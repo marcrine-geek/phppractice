@@ -16,6 +16,7 @@ $residenceErr="";
 $careerErr="";
 
 
+
 function test_input($data){
     $data=trim($data);
     $data=stripslashes($data);
@@ -73,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST"){
 
     //residence
     if (empty($_POST["residence"])){
-        $residenceErr="Gender is required";
+        $residenceErr="residence is required";
     }else{
         $residence=test_input($_POST["residence"]);
     }
